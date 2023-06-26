@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<div class="container">
+  <header>
+    <h1>Computer Science Department</h1>
+    <nav>
+      <ul>
+        <li><a href="web.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Academic Advising</li>
+        <li>Internship Opportunities</li>
+        <li>Career Counseling</li>
+        <li>Research Support</li>
+        <li>Networking Events</li>
+      </ul>
+    </section>
+    <section class="resources">
+      <h2>Our Resources</h2>
+      <ul>
+        <li>Computer Labs</li>
+        <li>Library</li>
+        <li>Study Spaces</li>
+        <li>Tutoring Services</li>
+        <li>Collaborative Workspaces</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Computer Science Department, Gujarat University</p>
+  </footer>
+</div>
+
+<style>
+<!--Design web page for Computer Science department of Gujarat University using Flex grid. Configure various properties of flex container and flex 
+items. Consider the services and resources at department as flex items-->
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: darkred;
+  color: white;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.services, .resources {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  background-color: lightred;
+  border-radius: 5px;
+}
+
+.services h2, .resources h2 {
+  margin-top: 0;
+}
+
+.services ul, .resources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services ul li, .resources ul li {
+  padding: 1rem 1rem;
+}
+
+.services ul li:nth-child(odd), .resources ul li:nth-child(odd) {
+  background-color: #fff;
+}
+
+.services ul li:nth-child(even), .resources ul li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+footer {
+  background-color: darkred;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+</style>
+</html>
